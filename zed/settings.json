@@ -1,0 +1,155 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "cli_default_open_behavior": "new_window",
+  "outline_panel": {
+    "dock": "left"
+  },
+  "show_completions_on_input": true,
+  "show_wrap_guides": true,
+  "ssh_connections": [
+    {
+      "host": "0.tcp.in.ngrok.io",
+      "username": "codex1",
+      "port": 13164,
+      // "port_forwards": [{ "local_port": 8080, "remote_port": 80 }],
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/home/codex1"
+          ],
+        },
+      ],
+    },
+  ],
+  "terminal": {
+    "dock": "bottom",
+  },
+  "git_panel": {
+    "tree_view": true,
+    "dock": "left",
+  },
+  "bottom_dock_layout": "full",
+  "preview_tabs": {
+    "enabled": false,
+  },
+  "tabs": {
+    "git_status": false,
+    "show_close_button": "always",
+    "file_icons": true,
+  },
+  "tab_bar": {
+    "show_tab_bar_buttons": true,
+    "show_nav_history_buttons": false,
+    "show": true,
+  },
+  "title_bar": {
+    "show_sign_in": false,
+    "show_menus": false,
+    "show_user_picture": false,
+    "show_user_menu": true,
+    "show_project_items": true,
+    "show_onboarding_banner": false,
+    "show_branch_icon": true,
+  },
+  "debugger": {
+    "button": true,
+  },
+  "diagnostics": {
+    "button": true,
+  },
+  "status_bar": {
+    "cursor_position_button": true,
+  },
+  "notification_panel": {
+    "button": false,
+  },
+  "collaboration_panel": {
+    "dock": "left",
+    "button": false,
+  },
+  "prettier": {
+    "allowed": true,
+  },
+  "toolbar": {
+    "agent_review": false,
+    "breadcrumbs": false,
+  },
+  "ui_font_family": ".ZedSans",
+  "buffer_font_family": ".ZedMono",
+  "restore_on_startup": "empty_tab",
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000,
+    },
+  },
+  "project_panel": {
+    "button": true,
+    "dock": "right",
+  },
+  "edit_predictions": {
+    "enabled_in_text_threads": false,
+  },
+  "agent": {
+    "dock": "right",
+    "button": false,
+    "expand_terminal_card": false,
+    "expand_edit_card": false,
+    "enable_feedback": false,
+    "favorite_models": [],
+    "single_file_review": false,
+    "model_parameters": [],
+  },
+  "disable_ai": true,
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "session": {
+    "trust_all_worktrees": true,
+  },
+  "icon_theme": {
+    "mode": "system",
+    "light": "Zed (Default)",
+    "dark": "Colored Zed Icons Theme Dark",
+  },
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "dark",
+    "light": "Ayu Light",
+    "dark": "One Dark Pro",
+  },
+  "format_on_save": "on",
+  "formatter": "language_server",
+  "languages": {
+    "Python": {
+      "code_actions_on_format": {
+        "source.organizeImports.ruff": false,
+        "source.fixAll.ruff": false
+      },
+    },
+    "Shell Script": {
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "shfmt",
+          "arguments": [
+            "--filename",
+            "{buffer_path}",
+            "--indent",
+            "2",
+            "-bn"
+          ],
+        },
+      },
+    },
+  },
+}
