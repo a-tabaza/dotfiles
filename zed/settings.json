@@ -13,22 +13,6 @@
   },
   "show_completions_on_input": true,
   "show_wrap_guides": true,
-  "ssh_connections": [
-    {
-      "host": "0.tcp.in.ngrok.io",
-      "username": "codex1",
-      "port": 13164,
-      // "port_forwards": [{ "local_port": 8080, "remote_port": 80 }],
-      "args": [],
-      "projects": [
-        {
-          "paths": [
-            "/home/codex1"
-          ],
-        },
-      ],
-    },
-  ],
   "terminal": {
     "dock": "bottom",
   },
